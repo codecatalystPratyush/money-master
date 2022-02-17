@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+header {
+    height: 75px;
+}
+h1 {
+    color: #1B98F5;
+}
+
+/* Classes and IDs */
+
+.section-child:last-child {
+    background-color: #F0F8FF;
+}
+.height-50 {
+    height: 50px;
+}
+.width-30 {
+    width: 30%;
+}
+.width-70 {
+    width: 70%;
+}
+.form-control, .form-control:focus {
+    background-color: #CAD5E2;
+}
+.btn, .btn:hover, .btn:focus {
+    background-color: #59A5FF;
+    color: #FFFFFF;
+}
+#save-btn {
+    width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-child {
+        width: 50%;
+    }
+    #save-40 {
+        width: 40%;
+    }
+    #save-60 {
+        width: 60%;
+    }
+    #save-btn {
+        width: 100%;
+    }
+}
