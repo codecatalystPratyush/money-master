@@ -3,12 +3,12 @@ window.addEventListener('load', () => {
         const values = [invalid('income'), invalid('food'), invalid('rent'), invalid('clothes')];
 
         if (values[0] == 'invalid' || values[1] == 'invalid' || values[2] == 'invalid' || values[3] == 'invalid') {
-            // error modal
+            showError();
         } else {
             const expenses = values[1] + values[2] + values[3];
 
             if (expenses > values[0]) {
-                // error modal
+                showError();
             } else {
                 document.getElementById('total-expenses').innerText = expenses;
                 document.getElementById('balance').innerText = values[0] - expenses;
@@ -21,18 +21,17 @@ window.addEventListener('load', () => {
         const values = [invalid('income'), invalid('save')];
 
         if (values[0] == 'invalid' || values[1] == 'invalid' || values[1] > 100) {
-            // error modal
+            showError();
         } else {
             const amount = values[0] * values[1] / 100;
 
             if (amount > balance) {
-                // error modal
+                showError();
             } else {
                 document.getElementById('saving-amount').innerText = amount;
                 document.getElementById('remaining-balance').innerText = balance - amount;
             }
         }
-
     });
 });
 
@@ -44,4 +43,9 @@ function invalid(idName) {
     } else {
         return input;
     }
+}
+
+function showError() {
+    const modalAhem = new bootstrap.Modal(document.getElementById('modal-ahem'));
+    modalAhem.show();
 }
