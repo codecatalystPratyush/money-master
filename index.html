@@ -26,40 +26,40 @@
                 <fieldset class="py-3 py-md-1">
                     <legend class="fw-bold">Income</legend>
                     <div class="align-items-center d-flex height-50">
-                        <div class="text-end width-30"><label class="px-3" for="">Income:</label></div>
-                        <div class="text-start width-70"><input class="form-control w-75" type="number" name="" id=""></div>
+                        <div class="text-end width-30"><label class="px-3" for="income">Income:</label></div>
+                        <div class="text-start width-70"><input class="form-control w-75" type="number" id="income"></div>
                     </div>
                 </fieldset>
 
                 <fieldset class="py-3 py-md-1">
                     <legend class="fw-bold">Expenses</legend>
                     <div class="align-items-center d-flex height-50">
-                        <div class="text-end width-30"><label class="px-3" for="">Food:</label></div>
-                        <div class="text-start width-70 overflow-auto"><input class="form-control w-75" type="number" name="" id=""></div>
+                        <div class="text-end width-30"><label class="px-3" for="food">Food:</label></div>
+                        <div class="text-start width-70"><input class="form-control w-75" type="number" id="food"></div>
                     </div>
                     <div class="align-items-center d-flex height-50">
-                        <div class="text-end width-30"><label class="px-3" for="">Rent:</label></div>
-                        <div class="text-start width-70"><input class="form-control w-75" type="number" name="" id=""></div>
+                        <div class="text-end width-30"><label class="px-3" for="rent">Rent:</label></div>
+                        <div class="text-start width-70"><input class="form-control w-75" type="number" id="rent"></div>
                     </div>
                     <div class="align-items-center d-flex height-50">
-                        <div class="text-end width-30"><label class="px-3" for="">Clothes:</label></div>
-                        <div class="text-start width-70"><input class="form-control w-75" type="number" name="" id=""></div>
+                        <div class="text-end width-30"><label class="px-3" for="clothes">Clothes:</label></div>
+                        <div class="text-start width-70"><input class="form-control w-75" type="number" id="clothes"></div>
                     </div>
                 </fieldset>
 
-                <button class="btn my-2 py-2 w-50" type="submit">Calculate</button>
-                <h5 class="fw-bold my-3">Total Expenses: <span>0</span></h5>
-                <h5 class="fw-bold my-3">Balance: <span>0</span></h5>
+                <button class="btn my-2 py-2 w-50" id="calculate-btn" type="submit">Calculate</button>
+                <h5 class="fw-bold my-3">Total Expenses: <span id="total-expenses">0</span></h5>
+                <h5 class="fw-bold my-3">Balance: <span id="balance">0</span></h5>
 
                 <div class="align-items-center d-md-flex">
                     <div class="align-items-center d-flex height-50" id="save-60">
-                        <div class="text-end width-30"><label class="px-3" for="">Save:</label></div>
-                        <div class="align-items-center d-flex text-start width-70"><input class="form-control w-75" type="number" name="" id=""><div class="px-2 px-md-3 text-center">%</div></div>
+                        <div class="text-end width-30"><label class="px-3" for="save">Save:</label></div>
+                        <div class="align-items-center d-flex text-start width-70"><input class="form-control w-75" type="number" id="save"><div class="px-2 px-md-3 text-center">%</div></div>
                     </div>
                     <div id="save-40"><button class="btn my-2 py-2" id="save-btn" type="submit">Save</button></div>
                 </div>
-                <h5 class="fw-bold my-3">Saving Amount: <span>0</span></h5>
-                <h5 class="fw-bold my-3">Remaining Balance: <span>0</span></h5>
+                <h5 class="fw-bold my-3">Saving Amount: <span id="saving-amount">0</span></h5>
+                <h5 class="fw-bold my-3">Remaining Balance: <span id="remaining-balance">0</span></h5>
             </div>
         </section>
     </main>
